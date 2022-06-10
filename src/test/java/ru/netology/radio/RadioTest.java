@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class RadioTest {
     Radio radio = new Radio();
+
     @Test
     void setBelowLimitRadioStation() {
         radio.setCurrentRadioStation(-1);

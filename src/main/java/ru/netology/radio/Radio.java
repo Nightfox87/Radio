@@ -10,6 +10,7 @@ public class Radio {
     public Radio() {
 
     }
+
     public Radio(int radioStationQuantity) {
         this.radioStationQuantity = radioStationQuantity;
     }
@@ -44,7 +45,7 @@ public class Radio {
     public void prevRadioStation() {
         int newCurrentRadioStation = currentRadioStation - 1;
         if (newCurrentRadioStation < 0) {
-            newCurrentRadioStation = 9;
+            newCurrentRadioStation = radioStationQuantity - 1;
         }
         this.currentRadioStation = newCurrentRadioStation;
 
